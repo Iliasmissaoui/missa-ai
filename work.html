@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f1c1b">
+<title>Our Work · Missa-AI</title>
+<meta name="description" content="The AI systems Missa-AI has built, from lead finding and cold email to RAG assistants in African languages, and the team behind them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Missa-AI home">
+      <svg viewBox="100 70 312 334" aria-hidden="true"><g fill="#d4a574"><polygon points="112,143 152,120 152,332 112,309"/><polygon points="400,143 360,120 360,332 400,309"/><polygon points="152,120 256,210 360,120 360,170 256,260 152,170"/><polygon points="172,343.6 256,392 340,343.6 340,303.6 256,352 172,303.6"/><polygon points="256,82 292,120 256,158 220,120"/></g></svg>
+      <span>Missa-<b>AI</b></span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="./#study">Services</a>
+      <a href="#work" aria-current="page">Our work</a>
+      <a href="#about">About us</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="wrap">
+      <a href="./">Home</a>
+      <a href="./#study">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#about">About us</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero page-hero">
+    <div class="wrap">
+      <div>
+        <p class="label">Our work</p>
+        <h1>What we've <em>built.</em></h1>
+        <p class="lede">Every system below is real: six are built and working, and one is in development. Each one started from a real problem: enquiries going unanswered, leads going cold, meetings with no notes, and patients who couldn't get answers in their own language.</p>
+        <div class="ctas">
+          <a class="btn" href="#contact">Talk about your business</a>
+          <a class="btn ghost" href="#about">About us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap">
+      <div><b>6</b><span>AI systems built</span></div>
+      <div><b>3</b><span>workflows in the outreach system</span></div>
+      <div><b>2</b><span>continents: Europe and Africa</span></div>
+      <div><b>6</b><span>languages we build in</span></div>
+    </div>
+  </div>
+
+  <section class="section" id="work">
+    <div class="wrap">
+
+      <article class="case" id="outreach">
+        <div class="case-meta">
+          <span class="tag built">Built · Live</span>
+          <dl>
+            <div><dt>Sector</dt><dd>Law firms, UK</dd></div>
+            <div><dt>Tools</dt><dd>n8n, Google Places, OpenAI, Gmail, Google Sheets</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>Lead finding and cold email system</h3>
+          <p>Three workflows that run every weekday. They find the right firms, study each one, write to them personally, and sort every reply so the owner only spends time on interested people.</p>
+          <ul>
+            <li>08:00: searches Google Maps for target firms and skips any already contacted.</li>
+            <li>An AI qualifier reads each website, scores the fit from 1 to 10, and finds a verified email.</li>
+            <li>09:00: an AI analyst finds the firm's most costly gap and writes an email under 200 words.</li>
+            <li>Every 5 minutes: replies are sorted into Hot, Warm, Cold, Not interested, Unsubscribe or Out of office, with a suggested answer for each.</li>
+            <li>Built-in rules: a daily send limit, an easy opt-out in every email, and permanent do-not-contact for unsubscribes.</li>
+          </ul>
+          <div class="flow" style="margin-top:18px"><span>Find</span><span>Qualify</span><span>Write &amp; send</span><span>Classify replies</span></div>
+        </div>
+      </article>
+
+      <article class="case" id="qualifier">
+        <div class="case-meta">
+          <span class="tag built">Built</span>
+          <dl>
+            <div><dt>Sector</dt><dd>Any business with inbound leads</dd></div>
+            <div><dt>Tools</dt><dd>n8n, Llama 3.3 70B on Groq, Google Sheets, Gmail</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>AI lead qualifier</h3>
+          <p>A branded web form sends each new lead to an AI that scores it HOT, WARM or COLD, logs it to a CRM sheet, and sends a reply written for that lead's situation.</p>
+          <ul>
+            <li>Scores every lead the moment it arrives.</li>
+            <li>Writes a personal reply instead of a generic auto-response.</li>
+            <li>Keeps a clean record of every lead and its score.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="case" id="legal-assistant">
+        <div class="case-meta">
+          <span class="tag built">Built</span>
+          <dl>
+            <div><dt>Sector</dt><dd>Law firms</dd></div>
+            <div><dt>Tools</dt><dd>n8n, RAG, OpenAI embeddings, embedded web chat</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>AI assistant for law firms</h3>
+          <p>A chat assistant that answers client questions about fees, documents and timescales around the clock, using only the firm's own information.</p>
+          <ul>
+            <li>Built on retrieval (RAG), so answers come from the firm's documents, not from guesswork.</li>
+            <li>Tuned for precision: small text chunks keep each answer to one clear idea.</li>
+            <li>Embeds on any website as a live chat.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="case" id="pidgin">
+        <div class="case-meta">
+          <span class="tag built">Built</span>
+          <dl>
+            <div><dt>Sector</dt><dd>Healthcare, Central Africa</dd></div>
+            <div><dt>Language</dt><dd>Cameroonian Pidgin</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>Patient assistant in Cameroonian Pidgin</h3>
+          <p>Most AI tools work best in English. Many patients don't. We built a knowledge assistant that understands questions in Cameroonian Pidgin and answers from approved medical information. It was delivered with a full user guide, written the way an AI specialist would hand a system over to a company.</p>
+          <ul>
+            <li>Retrieval-based, so it answers only from approved information.</li>
+            <li>Designed for a hospital's patient questions: appointments, preparation and common concerns.</li>
+            <li>Shows we can serve customers in the languages they actually speak.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="case" id="voice">
+        <div class="case-meta">
+          <span class="tag built">Built</span>
+          <dl>
+            <div><dt>Sector</dt><dd>Consultancies, agencies, sales teams</dd></div>
+            <div><dt>Output</dt><dd>Summary, actions, documents</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>Voice recorder to summary</h3>
+          <p>Record a meeting or a call. The system transcribes it, writes a clear summary, lists the actions with owners, and produces a document ready to send.</p>
+          <ul>
+            <li>No one has to take notes during the meeting.</li>
+            <li>Actions don't get lost between meetings.</li>
+            <li>Turns a client conversation into a ready-made follow-up.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="case" id="booking">
+        <div class="case-meta">
+          <span class="tag built">Built</span>
+          <dl>
+            <div><dt>Sector</dt><dd>Appointment-based businesses</dd></div>
+            <div><dt>Tools</dt><dd>n8n, Google Calendar, Gmail</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>Appointment booking workflow</h3>
+          <p>Checks real calendar availability, books the slot, and sends the confirmation, so customers can book without a phone call.</p>
+        </div>
+      </article>
+
+      <article class="case" id="club">
+        <div class="case-meta">
+          <span class="tag">In development</span>
+          <dl>
+            <div><dt>Sector</dt><dd>Football clubs and venues, UK</dd></div>
+            <div><dt>Tools</dt><dd>Website, database, n8n, AI assistant</dd></div>
+          </dl>
+        </div>
+        <div>
+          <h3>Club booking and ordering assistant</h3>
+          <p>A club website with an assistant that answers pitch, padel and function room questions at any hour, takes booking requests, and lets fans pre-order food and drinks before matchday.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">Where we build</p>
+        <h2>Europe and Africa, in your customers' language.</h2>
+      </div>
+      <div class="regions">
+        <div class="region"><b>United Kingdom</b><span>Lead finding and cold email, law firm assistants, club booking and ordering.</span></div>
+        <div class="region"><b>Europe</b><span>Assistants and workflows in English, French, Spanish and Arabic.</span></div>
+        <div class="region"><b>Central Africa</b><span>A patient assistant in Cameroonian Pidgin for healthcare.</span></div>
+      </div>
+      <div class="stack" aria-label="Tools we build with">
+        <span>n8n</span><span>OpenAI</span><span>Claude</span><span>Groq · Llama 3.3</span><span>RAG &amp; vector search</span><span>Google Workspace</span><span>WhatsApp</span><span>Python</span><span>JavaScript</span><span>Netlify</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap split">
+      <div>
+        <p class="phase-num">About us</p>
+        <h2>An AI automation agency built on operations experience.</h2>
+        <p class="intro">Missa-AI is a London-based agency that designs, builds and runs AI systems for small and mid-sized businesses. Our team comes from hands-on operations: managing staff, rotas, payroll, stock, bookings and customer enquiries. We know where the hours go, so we build systems that fit the way a business really runs.</p>
+        <p class="intro">We work with clients across the UK, Europe and Africa, and our team works in English, French, Arabic and Spanish.</p>
+        <ul class="values">
+          <li><strong>Study first</strong><span>The solution comes from your business, not our catalogue.</span></li>
+          <li><strong>Honest numbers</strong><span>We never claim results we can't show you.</span></li>
+          <li><strong>People stay in charge</strong><span>AI does the repetitive work. Your team makes the decisions.</span></li>
+          <li><strong>Your language</strong><span>We build for the languages your customers speak.</span></li>
+        </ul>
+      </div>
+      <div class="cards">
+        <article class="person">
+          <div class="avatar" aria-hidden="true">IM</div>
+          <p class="role">Founder · Lead engineer</p>
+          <h3>Ilias Missaoui</h3>
+          <p>Leads the technical team and the design of every system, from automation workflows to RAG assistants.</p>
+        </article>
+        <article class="person">
+          <div class="avatar" aria-hidden="true">RM</div>
+          <p class="role">Co-founder · Field director</p>
+          <h3>Rayane Missaoui</h3>
+          <p>Meets businesses, runs discovery and makes sure every project starts from a real problem.</p>
+        </article>
+        <article class="person">
+          <div class="avatar" aria-hidden="true">M</div>
+          <p class="role">Co-founder · Creative director</p>
+          <h3>Marwane</h3>
+          <p>Leads brand, content and design, so every website and demo looks as good as it works.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" id="contact">
+    <svg class="dash" viewBox="0 0 360 360" aria-hidden="true"><polygon points="180,20 318,100 318,260 180,340 42,260 42,100" fill="none" stroke="#d4a574" stroke-width="2" stroke-dasharray="6 10"/></svg>
+    <div class="wrap">
+      <h2><span>Seen what we've built?</span>Let's find what to <em>build for you.</em></h2>
+      <div class="contact">
+        <p>Tell us about your business. We'll come back with what we'd fix first, free and with no obligation.</p>
+        <a class="btn" href="mailto:missaartificialintelligence@gmail.com?subject=Discovery%20call">Get in touch</a>
+        <div class="email">
+          <code id="email">missaartificialintelligence@gmail.com</code>
+          <button class="copy" id="copy-email" type="button">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Missa-AI home">
+      <svg viewBox="100 70 312 334" aria-hidden="true"><g fill="#d4a574"><polygon points="112,143 152,120 152,332 112,309"/><polygon points="400,143 360,120 360,332 400,309"/><polygon points="152,120 256,210 360,120 360,170 256,260 152,170"/><polygon points="172,343.6 256,392 340,343.6 340,303.6 256,352 172,303.6"/><polygon points="256,82 292,120 256,158 220,120"/></g></svg>
+      <span>Missa-<b>AI</b></span>
+    </a>
+    <nav aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="./#study">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#about">About us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p>© 2026 Missa-AI · London, United Kingdom</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
